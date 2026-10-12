@@ -27,10 +27,11 @@ enum GameType {
 }
 
 model Game {
-  id        Int                        @id @default(autoincrement())
-  title     String
-  imageID   Int?
-  type      GameType
+  id          Int      @id @default(autoincrement())
+  title       String
+  imageID     Int?
+  type        GameType
+  description String?
 }
 
 model Event {
